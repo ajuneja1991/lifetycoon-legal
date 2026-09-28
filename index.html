@@ -31,6 +31,11 @@
   ul { padding-left: 1.35rem; }
   li { margin: .3rem 0; }
   code { background: #ececec; padding: .1em .35em; border-radius: 3px; font-size: .9em; }
+  table { border-collapse: collapse; width: 100%; font-size: .9rem; margin: 1rem 0; display: block; overflow-x: auto; }
+  th, td { border: 1px solid #ddd; padding: .45rem .55rem; text-align: left; vertical-align: top; }
+  th { background: #f0f0f0; }
+  nav { margin-top: 2.5rem; font-size: .95rem; }
+  nav a { margin-right: 1rem; }
   footer { margin-top: 3rem; color: #777; font-size: .9rem; }
   @media (prefers-color-scheme: dark) {
     body { color: #e6e6e6; background: #121212; }
@@ -39,82 +44,331 @@
     blockquote { background: #1e1e1e; border-left-color: #444; color: #cfcfcf; }
     hr { border-top-color: #333; }
     code { background: #262626; }
+    th, td { border-color: #333; }
+    th { background: #1e1e1e; }
   }
 </style>
 </head>
 <body>
 <main>
-
 <h1>Privacy Policy — LifeTycoon</h1>
-<p class="updated"><strong>Last updated: 18 September 2026</strong></p>
-
-<p>LifeTycoon ("the app", "we", "us") is a single-player life-simulation game for Android, developed by <strong>Aman Juneja</strong> ("the developer"). This policy explains what data the app handles and why.</p>
-
-<p>Contact: <strong><a href="mailto:amanjuneja75@gmail.com">amanjuneja75@gmail.com</a></strong></p>
-
+<p class="updated"><strong>Last updated: 28 September 2026</strong></p>
+<p>LifeTycoon (&quot;the app&quot;, &quot;the game&quot;, &quot;we&quot;, &quot;us&quot;, &quot;our&quot;) is a single-player
+life-simulation game for Android, developed by <strong>Aman Juneja</strong>, an individual
+developer based in <strong>Gurugram, Haryana, India</strong> (&quot;the developer&quot;).</p>
+<p>This policy explains what personal data the app and its service providers
+handle, why, on what legal basis, how long it is kept, and the choices and
+rights you have. It applies to the LifeTycoon Android app distributed through
+Google Play.</p>
+<p><strong>Contact:</strong> <a href="mailto:lifetycoon.support@gmail.com">lifetycoon.support@gmail.com</a></p>
+<p><strong>Grievance Officer (India):</strong> see section 14.</p>
 <hr>
-
-<h2>Summary</h2>
+<h2>1. Summary</h2>
 <ul>
-  <li>The game is <strong>playable entirely offline</strong> and does <strong>not require an account</strong>.</li>
-  <li>Your character names and in-game choices <strong>stay on your device only</strong>. They are never sold.</li>
-  <li>We use <strong>Google AdMob</strong> to show ads, and <strong>Google Firebase</strong> for crash reporting and anonymous usage analytics.</li>
-  <li>The app is rated for teen audiences and is <strong>not directed to children under 13</strong>.</li>
+<li>The game is <strong>playable offline</strong> and <strong>needs no account or sign-in</strong>. Your
+characters, choices, statistics and progress are saved <strong>only on your device</strong>.
+There is no cloud save and no cross-device sync.</li>
+<li>The <strong>free</strong> version shows ads supplied by <strong>Google AdMob</strong>. You can turn ads
+off permanently by buying <strong>LifeTycoon Pro</strong>.</li>
+<li>We use <strong>Google Firebase</strong> for <strong>anonymous usage analytics</strong> and <strong>crash
+reporting</strong>. Both can be switched off in <strong>Settings</strong>.</li>
+<li>Purchases are processed by <strong>Google Play Billing</strong>. We never see your name,
+card number or billing address.</li>
+<li>If push notifications are switched on in the app, <strong>Firebase Cloud Messaging</strong>
+registers a device token so they can be delivered. You can turn notifications
+off in Settings.</li>
+<li>The app is rated for <strong>teen</strong> audiences, is <strong>not directed to children under
+13</strong>, and asks for your birth year on first run to enforce this.</li>
+<li>You can erase your local data and request deletion of analytics data from
+<strong>Settings → Delete my data</strong>.</li>
 </ul>
-
+<p>The table in section 3 is the complete inventory. Nothing outside it is
+collected.</p>
 <hr>
-
-<h2>1. Data stored on your device</h2>
-<p>Your game progress — character details you enter, life events, statistics, settings and purchase status — is saved in the app's private storage on your device and never leaves it. You can erase it at any time via <strong>Settings &rarr; Reset data</strong>, or by uninstalling the app.</p>
-
-<h2>2. Advertising (Google AdMob)</h2>
-<p>The free version of the app shows ads supplied by Google AdMob. For this, Google may collect and process:</p>
+<h2>2. Who this policy covers and your consent</h2>
+<p>By installing and using LifeTycoon you acknowledge this policy. Where the law
+requires consent for a specific processing activity (for example, personalised
+advertising in the EEA/UK), that consent is collected separately through
+Google&#39;s consent prompt (see section 4) and can be withdrawn at any time.</p>
+<hr>
+<h2>3. What we collect, why, and for how long</h2>
+<table>
+<thead>
+<tr>
+<th>Data</th>
+<th>Collected / processed by</th>
+<th>Purpose</th>
+<th>Shared with</th>
+<th>Retention</th>
+<th>Your control</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>On-device game data</strong> — character details you type, life events, statistics, settings, achievement and purchase status; a local save file plus a few rolling backups. The save file carries a short device-derived integrity tag used only to detect tampering; it never leaves the device.</td>
+<td>The app, on your device only</td>
+<td>Run the game; keep your progress</td>
+<td>No one — never uploaded</td>
+<td>Until you use <strong>Reset data</strong> / <strong>Delete my data</strong>, or uninstall</td>
+<td><strong>Settings → Reset data</strong> / <strong>Delete my data</strong>; uninstall</td>
+</tr>
+<tr>
+<td><strong>App events</strong> — e.g. character created, year advanced, choice made, life ended, purchase made, ad shown, screen opened, with non-identifying parameters. <strong>No character names or free text you type are sent.</strong></td>
+<td>Google Firebase Analytics</td>
+<td>Understand feature use and stability in aggregate</td>
+<td>Google (as our processor)</td>
+<td>Firebase&#39;s standard analytics retention</td>
+<td><strong>Settings → &quot;Share anonymous usage data&quot;</strong> (on unless you turn it off); <strong>Delete my data</strong></td>
+</tr>
+<tr>
+<td><strong>Crash and diagnostic data</strong> — stack traces, a random app-instance identifier, device model, OS version, app version, language, coarse region</td>
+<td>Google Firebase Crashlytics</td>
+<td>Diagnose and fix crashes</td>
+<td>Google (as our processor)</td>
+<td>Firebase Crashlytics&#39; standard retention</td>
+<td><strong>Settings → &quot;Send crash reports&quot;</strong> (on unless you turn it off); <strong>Delete my data</strong></td>
+</tr>
+<tr>
+<td><strong>Advertising data</strong> — advertising ID, IP address (for coarse location), general device information, ad interaction data (impressions, clicks), and the consent choice you made</td>
+<td>Google AdMob / Google Mobile Ads SDK</td>
+<td>Serve, frequency-cap and measure ads in the free version</td>
+<td>Google (as an independent controller for ad delivery, under its own policies)</td>
+<td>Per Google&#39;s ad-data retention</td>
+<td>Buy <strong>LifeTycoon Pro</strong> to remove ads; in the EEA/UK use the consent prompt / <strong>Settings → &quot;Manage ad consent&quot;</strong>; reset or delete the advertising ID in Android settings</td>
+</tr>
+<tr>
+<td><strong>Purchase data</strong> — the Google Play purchase token and order ID for items you buy; the resulting entitlement</td>
+<td>Google Play Billing</td>
+<td>Deliver purchases; let you restore them on a new install</td>
+<td>Google (payment processor and merchant of record)</td>
+<td>Kept by Google per its policies; we keep only the entitlement on your device</td>
+<td>Your Google Play account</td>
+</tr>
+<tr>
+<td><strong>Push registration</strong> <em>(only if push notifications are switched on)</em> — a Firebase Cloud Messaging registration token and topic subscriptions</td>
+<td>Firebase Cloud Messaging</td>
+<td>Deliver notifications you have opted into</td>
+<td>Google (as our processor)</td>
+<td>Until you turn notifications off or uninstall</td>
+<td><strong>Settings → Notifications</strong> and its per-category toggles</td>
+</tr>
+</tbody></table>
+<p>&quot;Coarse region&quot; means country/region level, derived from IP address by Google —
+not GPS or precise location.</p>
+<hr>
+<h2>4. Advertising and personalisation (free version)</h2>
+<p>The free version shows ads from Google AdMob — for example a banner, occasional
+full-screen ads at natural breaks between years of play, and optional rewarded
+ads that you choose to watch. Pro users are never shown ads.</p>
 <ul>
-  <li>device advertising identifier, IP address, general device information (model, OS version, language, coarse region);</li>
-  <li>ad interaction data (impressions, clicks).</li>
+<li>In the <strong>EEA, UK and Switzerland</strong>, Google&#39;s <strong>User Messaging Platform</strong>
+consent prompt is shown before any personalised advertising. You can choose
+non-personalised ads, and you can re-open the prompt at any time from
+<strong>Settings → &quot;Manage ad consent&quot;</strong>.</li>
+<li>Elsewhere, you can limit ad personalisation through your device&#39;s Google ad
+settings and reset or delete your advertising ID.</li>
+<li>Ads are requested with a maximum content rating of <strong>Teen</strong> and are marked as
+not child-directed.</li>
+<li>Buying <strong>LifeTycoon Pro</strong> removes ads: no ads are requested or shown for a Pro
+user.</li>
 </ul>
-<p>This is used to serve and measure ads and to limit repetition. Where required (e.g. the EEA, UK), the app shows Google's consent prompt before any personalised advertising. See Google's <a href="https://policies.google.com/technologies/ads">Advertising Privacy &amp; Terms</a>.</p>
-<p>You can opt out of ads entirely by purchasing the one-time <strong>LifeTycoon Pro</strong> unlock.</p>
-
-<h2>3. Analytics and crash reporting (Google Firebase)</h2>
-<p>The app uses Firebase Crashlytics and Firebase Analytics to understand stability and general usage. Data processed includes:</p>
+<p>Google&#39;s handling of advertising data is governed by Google&#39;s
+<a href="https://policies.google.com/technologies/ads">Advertising — Privacy &amp; Terms</a>
+and <a href="https://policies.google.com/technologies/partner-sites">How Google uses information from sites or apps that use our services</a>.</p>
+<hr>
+<h2>5. Third-party services and SDKs</h2>
+<p>The app includes the following third-party components. Each provider handles data
+under its own privacy policy:</p>
+<table>
+<thead>
+<tr>
+<th>Provider / SDK</th>
+<th>Role</th>
+<th>Policy</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Google Firebase (Analytics, Crashlytics, Cloud Messaging, Remote Config)</td>
+<td>Analytics, crash reporting, push delivery, remote feature settings</td>
+<td><a href="https://firebase.google.com/support/privacy">https://firebase.google.com/support/privacy</a></td>
+</tr>
+<tr>
+<td>Google Mobile Ads (AdMob) + User Messaging Platform</td>
+<td>Advertising and EEA/UK consent</td>
+<td><a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a> and <a href="https://policies.google.com/technologies/ads">https://policies.google.com/technologies/ads</a></td>
+</tr>
+<tr>
+<td>Google Play Billing</td>
+<td>Purchases, restore, refunds</td>
+<td><a href="https://play.google.com/about/play-terms/">https://play.google.com/about/play-terms/</a> and <a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a></td>
+</tr>
+<tr>
+<td>Google Play services (device)</td>
+<td>Platform services the above depend on</td>
+<td><a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a></td>
+</tr>
+</tbody></table>
+<p>We do not integrate any social-media SDK, tracking pixel, data broker, or
+attribution / ad-network SDK beyond Google AdMob.</p>
+<hr>
+<h2>6. What we do <strong>not</strong> collect</h2>
+<p>The app does not collect precise/GPS location, contacts, photos or media, files,
+microphone audio, camera images, SMS, call logs, calendar, health or fitness
+data, or biometric data. It does not build an advertising or marketing profile
+of you beyond what the AdMob SDK does for ad delivery, frequency capping and
+measurement. <strong>We do not sell personal data.</strong></p>
+<hr>
+<h2>7. Legal bases for processing</h2>
+<p>Where a legal basis is required (for example under the EU/UK GDPR, or India&#39;s
+Digital Personal Data Protection Act, 2023):</p>
+<table>
+<thead>
+<tr>
+<th>Processing</th>
+<th>Basis</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Storing your game data on your device; delivering purchases you request; showing <strong>non-personalised</strong> ads in the free version; crash reporting needed to keep the app working</td>
+<td>Performance of the service you asked for / our legitimate interest in a functioning, stable app</td>
+</tr>
+<tr>
+<td><strong>Personalised</strong> advertising (EEA/UK/CH)</td>
+<td>Your consent, collected via the consent prompt and withdrawable at any time</td>
+</tr>
+<tr>
+<td>Usage analytics</td>
+<td>Your consent, which you can withdraw in Settings at any time; our legitimate interest in improving the app</td>
+</tr>
+<tr>
+<td>Push notifications</td>
+<td>Your consent (you turn notifications on)</td>
+</tr>
+<tr>
+<td>Complying with law, resolving disputes, enforcing our Terms</td>
+<td>Legal obligation / legitimate interest</td>
+</tr>
+</tbody></table>
+<p>Under India&#39;s DPDP Act, processing is based on your consent or on the
+&quot;legitimate uses&quot; that Act allows; you may withdraw consent as easily as you
+gave it, using the Settings controls in section 8.</p>
+<hr>
+<h2>8. Your choices and controls</h2>
+<p><strong>In the app:</strong></p>
 <ul>
-  <li>a randomly generated app-instance identifier;</li>
-  <li>device model, OS version, app version, language, coarse region;</li>
-  <li>crash stack traces and diagnostic logs;</li>
-  <li>aggregate in-app events (e.g. screen opened, life started) — <strong>no character names or free-text you enter</strong>.</li>
+<li><strong>Settings → &quot;Share anonymous usage data&quot;</strong> — turns Firebase Analytics
+collection off.</li>
+<li><strong>Settings → &quot;Send crash reports&quot;</strong> — turns Firebase Crashlytics collection
+off.</li>
+<li><strong>Settings → &quot;Manage ad consent&quot;</strong> — re-opens Google&#39;s consent prompt (EEA/UK).</li>
+<li><strong>Settings → Notifications</strong> — master and per-category toggles.</li>
+<li><strong>Settings → Reset data</strong> — erases your current life, dynasty and preferences
+on this device; keeps unlocked achievements and a genuine Pro purchase so you
+are not charged again.</li>
+<li><strong>Settings → Delete my data</strong> — erases your game data on this device <strong>and</strong>
+asks Firebase to delete the analytics data associated with this install, then
+turns analytics collection off. It also shows the web form and email below for
+anything else.</li>
 </ul>
-<p>This data is not used to identify you personally and is not sold. See the <a href="https://firebase.google.com/support/privacy">Firebase Privacy documentation</a>.</p>
-
-<h2>4. Purchases</h2>
-<p>The one-time "LifeTycoon Pro" purchase is processed by <strong>Google Play Billing</strong>. We receive a purchase token confirming the entitlement; we do <strong>not</strong> receive or store your name, card number or billing address. Refunds and payment records are handled by Google Play.</p>
-
-<h2>5. Data we do not collect</h2>
-<p>The app does not collect precise location, contacts, photos, files, microphone audio, SMS, call logs, or health data. The app requires no account or sign-in of any kind and has no cloud save or cross-device sync.</p>
-
-<h2>6. Children</h2>
-<p>LifeTycoon is rated for <strong>teen</strong> audiences (IARC Teen / PEGI 12 / ESRB Teen). It is not directed to children under 13 and we do not knowingly collect personal data from them. If you believe a child has provided personal data, contact us and we will delete it.</p>
-
-<h2>7. Data sharing</h2>
-<p>We do not sell personal data. Data is shared only with the service providers named above (Google: AdMob, Firebase, Play Billing), acting as our processors or — for advertising — as independent controllers under their own policies. We may disclose data if required by law.</p>
-
-<h2>8. Data retention</h2>
+<p><strong>On your device / Google account:</strong></p>
 <ul>
-  <li>On-device data: until you reset or uninstall.</li>
-  <li>Analytics/crash data: retained per Google Firebase's standard retention windows.</li>
+<li>Reset or delete your <strong>advertising ID</strong> in Android <strong>Settings → Privacy → Ads</strong>.</li>
+<li>Manage or refund purchases in the <strong>Google Play Store → Payments &amp; subscriptions</strong>.</li>
+<li>Manage data Google holds through your
+<a href="https://myaccount.google.com/data-and-privacy">Google Account controls</a>.</li>
 </ul>
+<p><strong>By contacting us:</strong></p>
+<ul>
+<li>Web page: <a href="https://ajuneja1991.github.io/lifetycoon-legal/data-deletion/">https://ajuneja1991.github.io/lifetycoon-legal/data-deletion/</a></li>
+<li>Email: <a href="mailto:lifetycoon.support@gmail.com">lifetycoon.support@gmail.com</a></li>
+</ul>
+<p>We aim to acknowledge requests within <strong>7 days</strong> and to resolve them within
+<strong>30 days</strong>, or sooner if your local law requires it.</p>
+<hr>
+<h2>9. Data retention</h2>
+<ul>
+<li><strong>On-device game data:</strong> until you reset, delete, or uninstall.</li>
+<li><strong>Analytics and crash data:</strong> Google Firebase&#39;s standard retention windows
+apply; we do not extend them. &quot;Delete my data&quot; requests deletion of the
+analytics data tied to your install.</li>
+<li><strong>Advertising data:</strong> retained by Google per its policies; we do not store it.</li>
+<li><strong>Purchase records:</strong> retained by Google Play; on your device we keep only the
+entitlement, until you delete data or uninstall.</li>
+<li><strong>Support correspondence:</strong> kept only as long as needed to handle your request
+and any follow-up, then deleted.</li>
+</ul>
+<hr>
+<h2>10. Children and teens</h2>
+<p>LifeTycoon is rated for <strong>teen</strong> audiences and is <strong>not directed to children
+under 13</strong>. On first run the app asks for your birth year; if it shows you are
+under 13 you cannot continue, and only a single yes/no result is stored on the
+device — no birth year and no age. We do not knowingly collect personal data
+from children under 13, or under the higher age of digital consent in your
+country.</p>
+<p><strong>If you are under 18</strong>, please use LifeTycoon only with the knowledge and
+consent of a parent or legal guardian; in India, the law treats everyone under
+18 as a child for data-protection purposes. A parent or guardian can switch off
+analytics and crash reporting, and delete the app&#39;s data, using the controls in
+section 8.</p>
+<p>If you believe a child has provided personal data, contact us at
+<a href="mailto:lifetycoon.support@gmail.com">lifetycoon.support@gmail.com</a> and we will
+delete it.</p>
+<hr>
+<h2>11. Your rights</h2>
+<h3>India — Digital Personal Data Protection Act, 2023</h3>
+<p>If you are in India, you have the right to: access a summary of your personal
+data and how it is processed; correction, completion, updating and erasure;
+grievance redressal (section 14); and to nominate another person to exercise
+your rights in the event of death or incapacity. To exercise any of these,
+contact the Grievance Officer below. If your grievance is not resolved, you may
+complain to the <strong>Data Protection Board of India</strong>.</p>
+<h3>EEA / UK / Switzerland — GDPR</h3>
+<p>You have the right to access, rectify, erase, restrict or object to processing,
+and to data portability, and — where processing is based on consent — to
+withdraw consent at any time without affecting earlier processing. You may lodge
+a complaint with your local supervisory authority (in the UK, the ICO). We have
+no EU/UK establishment; contact us at
+<a href="mailto:lifetycoon.support@gmail.com">lifetycoon.support@gmail.com</a> and we will
+respond directly.</p>
+<h3>California and other US states</h3>
+<p>We do not sell personal information for money. The advertising SDK&#39;s use of
+identifiers for personalised ads may count as &quot;sharing&quot; for cross-context
+behavioural advertising under California law; you can opt out using your device
+ad settings and the controls in section 8. You have the right to know, delete
+and correct personal information, and not to be discriminated against for
+exercising these rights. Contact
+<a href="mailto:lifetycoon.support@gmail.com">lifetycoon.support@gmail.com</a>.</p>
+<p>We will not charge you or degrade the game for exercising any privacy right,
+beyond the unavoidable effect of a choice (for example, turning off analytics
+does not change gameplay; deleting your data removes your saved progress).</p>
+<hr>
+<h2>12. International transfers</h2>
+<p>The service providers named above are Google entities that may process data on
+servers outside your country, including in the United States. Google applies
+its own transfer safeguards (such as Standard Contractual Clauses). We do not
+ourselves hold any server-side copy of your data.</p>
+<hr>
+<h2>13. Security</h2>
+<p>Game data stays in the app&#39;s private storage on your device. The save file
+carries a device-derived integrity tag so tampering with the paid unlock is
+detected. Network traffic from the app uses HTTPS only. No system is perfectly
+secure; you are responsible for the security of your device and Google account.</p>
+<hr>
+<h2>14. Grievance Officer and contact</h2>
+<p><strong>Grievance Officer (India):</strong> Aman Juneja</p>
+<p>Email: <a href="mailto:lifetycoon.support@gmail.com">lifetycoon.support@gmail.com</a></p>
+<p>Location: Gurugram, Haryana, India</p>
+<p>We will acknowledge a grievance within <strong>7 days</strong> and aim to resolve it within
+<strong>30 days</strong>, and in any case within the time limit set by applicable law.</p>
+<p><strong>Developer:</strong> Aman Juneja, Gurugram, Haryana, India</p>
+<hr>
+<h2>15. Changes to this policy</h2>
+<p>We may update this policy as the app changes. Material changes will be reflected
+in the &quot;Last updated&quot; date and, where appropriate, highlighted in the app or on
+this page before they take effect. If you keep using the app after an update, the
+revised policy applies; if you do not agree, stop using the app and uninstall it.</p>
 
-<h2>9. Your rights</h2>
-<p>Depending on your location you may have rights to access, correct or delete your personal data. Email <strong><a href="mailto:amanjuneja75@gmail.com">amanjuneja75@gmail.com</a></strong>. For data held by Google, use your <a href="https://myaccount.google.com/data-and-privacy">Google Account controls</a>.</p>
-
-<h2>10. Changes to this policy</h2>
-<p>We may update this policy as the app evolves. Material changes will be reflected by the "Last updated" date above and, where appropriate, noted in the app.</p>
-
-<h2>11. Contact</h2>
-<p><strong>Aman Juneja</strong> — <a href="mailto:amanjuneja75@gmail.com">amanjuneja75@gmail.com</a></p>
-
-<footer>LifeTycoon · <code>com.ajuneja.life_tycoon</code></footer>
-
+<nav><a href="./privacy-policy/">Privacy Policy</a><a href="./terms/">Terms of Service</a><a href="./refund-policy/">Refund Policy</a><a href="./data-deletion/">Delete your data</a></nav>
+<footer>LifeTycoon · <code>com.ajuneja.life_tycoon</code> · Aman Juneja, Gurugram, Haryana, India</footer>
 </main>
 </body>
 </html>
